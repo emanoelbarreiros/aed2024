@@ -1,7 +1,5 @@
 package algoritmos;
 
-import java.util.Arrays;
-
 public class MergeSort {
 
     public static void ordenar(int[] valores, int p, int r) {
@@ -17,8 +15,16 @@ public class MergeSort {
     public static void merge(int[] valores, int p, int q, int r) {
         int nE = q - p + 1;
         int nD = r - q;
-        int[] esquerda = Arrays.copyOf(valores, nE);
-        int[] direita = Arrays.copyOfRange(valores, q + 1, valores.length);
+        int[] esquerda = new int[nE];
+        int[] direita = new int[nD];
+
+        for (int x = 0; x < nE; x++) {
+            esquerda[x] = valores[p + x];
+        }
+
+        for (int y = 0; y < nD; y++) {
+            direita[y] = valores[q + y + 1];
+        }
 
         int i = 0;
         int j = 0;
