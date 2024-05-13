@@ -10,7 +10,6 @@ public class Heap {
     public Heap(int[] valores) {
         this.valores = Arrays.stream(valores).toArray();
         this.tam = valores.length;
-
         construirHeap();
     }
 
