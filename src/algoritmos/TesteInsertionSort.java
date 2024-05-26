@@ -2,7 +2,7 @@ package algoritmos;
 
 import java.util.Arrays;
 
-public class TestaInsertionSort {
+public class TesteInsertionSort {
 
     public static void main(String[] args) {
         int[] v = {5,1,2,3,7,4,0};
